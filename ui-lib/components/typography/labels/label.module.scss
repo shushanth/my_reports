@@ -1,0 +1,41 @@
+@import "../../../styles/partials/variables";
+
+.label {
+  display: flex;
+  flex-direction: column;
+  &_level {
+    &--primary {
+      color: $colors-gray--light;
+    }
+
+    &--secondary {
+      color: $colors-violet-secondary;
+    }
+  }
+  &_size {
+    &--small {
+      font-size: $font-size-xs;
+      font-weight: $font-weight-bold;
+    }
+
+    &--medium {
+      font-size: $font-size-m;
+    }
+
+    &--large {
+      font-size: $font-size-l;
+    }
+    &--xL {
+      font-size: $font-size-xl;
+      font-weight: $font-weight-bolder;
+    }
+
+    &--xxL {
+      font-size: $font-size-xxl;
+    }
+    &--xxxL {
+      font-size: $font-size-xxxl;
+      font-weight: $font-weight-boldest;
+    }
+  }
+}

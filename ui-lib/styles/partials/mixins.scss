@@ -1,0 +1,10 @@
+@mixin linear-gradient($colors...) {
+  background: linear-gradient($colors);
+}
+@mixin text-gradient($colors...) {
+  @include linear-gradient($colors);
+  background-clip: text;
+  color: transparent;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+}

@@ -35,3 +35,14 @@ a {
   padding: 0;
   box-sizing: border-box;
 }
+
+.app_layout {
+  display: flex;
+  height: 100vh;
+  gap: $spaces-xxl;
+  margin: $spaces-s $spaces-xl $spaces-s 0;
+}
+
+.hz-line {
+  border: 1px solid $colors-violet-secondary;
+}

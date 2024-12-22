@@ -1,0 +1,20 @@
+@import "../../../styles/partials/variables.scss";
+@import "../../../styles/partials/mixins.scss";
+
+.heading {
+  display: flex;
+  flex-direction: column;
+
+  &-level-page {
+    &--h1 {
+      font-weight: 600;
+      font-size: $font-size-xxl;
+      @include text-gradient($colors-violet-primary, $colors-orange-primary);
+    }
+  }
+
+  &-level-content {
+    &-h1 {
+    }
+  }
+}
