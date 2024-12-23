@@ -168,7 +168,7 @@ const reportsMock = {
 
 export const getReportsApi = async (): Promise<Partial<Reports>> => {
   await delay();
-  return new Promise((resolve) => {
+  return new Promise((resolve, reject) => {
     resolve(reportsMock);
   });
 };
