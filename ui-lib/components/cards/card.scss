@@ -20,7 +20,9 @@
     gap: $spaces-m $spaces-xs;
     display: flex;
     flex-direction: inherit;
+    padding: 0 $spaces-m;
   }
+
   &_default {
     background-color: $colors-white;
   }
