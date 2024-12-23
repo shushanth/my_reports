@@ -1,15 +1,15 @@
 "use client";
 import React from "react";
-import { useAppSelector, useAppStore } from "../../../../lib/hooks";
+import { useAppSelector, useAppStore } from "../../../../store-lib/hooks";
 import * as Ui from "../../../../ui-lib/components";
 import {
   initReports,
   paginateLinks,
   pageNumberUpdate,
-} from "../../../../lib/features/reports-links/reportsLinksSlice";
-import { totalLinksPagesCount } from "../../../../lib/features/reports-links/reportsLinksSelector";
+} from "../../../../store-lib/features/reports-links/reportsLinksSlice";
+import { totalLinksPagesCount } from "../../../../store-lib/features/reports-links/reportsLinksSelector";
 import { useSelector } from "react-redux";
-import { RootState } from "../../../../lib/store";
+import { RootState } from "../../../../store-lib/store";
 import ReportsAction from "./actions/ReportsAction";
 export type ReportsData = {
   domain: string;

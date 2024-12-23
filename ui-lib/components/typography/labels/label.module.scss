@@ -23,24 +23,9 @@
       font-weight: $font-weight-bold;
     }
 
-    &--medium {
-      font-size: $font-size-m;
-    }
-
-    &--large {
-      font-size: $font-size-l;
-    }
     &--xL {
       font-size: $font-size-xl;
       font-weight: $font-weight-bolder;
-    }
-
-    &--xxL {
-      font-size: $font-size-xxl;
-    }
-    &--xxxL {
-      font-size: $font-size-xxxl;
-      font-weight: $font-weight-boldest;
     }
   }
 }

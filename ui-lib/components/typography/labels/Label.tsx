@@ -4,7 +4,7 @@ import styles from "./label.module.scss";
 export type LabelProps = {
   children: Readonly<React.ReactNode>;
   level: "primary" | "secondary" | "";
-  size: "small" | "xL" | "smallx";
+  size: "small" | "smallx" | "xL";
 };
 
 export default function Label({ children, level, size }: LabelProps) {
