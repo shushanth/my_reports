@@ -18,8 +18,8 @@ export default function Card({
 }: CardProps) {
   return (
     <div className={`card card_${type}`}>
-      {bodyContent && <div className="card_header">{headerContent}</div>}
-      {headerContent && <div className="card_content">{bodyContent}</div>}
+      {headerContent && <div className="card_header">{headerContent}</div>}
+      {bodyContent && <div className="card_content">{bodyContent}</div>}
       {children && children}
     </div>
   );

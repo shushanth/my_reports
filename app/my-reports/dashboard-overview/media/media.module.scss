@@ -4,22 +4,17 @@
   &_header {
     display: flex;
     flex-direction: column;
-    &header {
-    }
-    &action {
-    }
   }
 
   &_content {
     display: flex;
     flex-direction: column;
     margin-left: $spaces-xxl;
-    &content {
-    }
+
     &action {
       display: flex;
       justify-content: flex-end;
-      margin: $spaces-m $spaces-xs;
+      margin: 0 $spaces-xs $spaces-m 0;
     }
   }
 }

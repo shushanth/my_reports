@@ -4,7 +4,7 @@ import styles from "./Button.module.scss";
 type ButtonProps = {
   shape?: "rounded" | "straight";
   level: "primary" | "secondary";
-  size: "small" | "medium" | "large";
+  size: "small" | "medium";
   children: Readonly<React.ReactNode>;
   disabled?: boolean;
   variant?: "light" | "bold";
@@ -27,7 +27,6 @@ export default function Button({
         [`${styles.button}_secondary`]: level === "secondary",
         [`${styles.button}_small`]: size === "small",
         [`${styles.button}_medium`]: size === "medium",
-        [`${styles.button}_large`]: size === "large",
         [`${styles.button}--rounded`]: shape === "rounded",
         [`${styles.button}--straight`]: shape === "straight",
         [`${styles.button}--light`]: variant === "light",

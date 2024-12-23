@@ -1,13 +1,13 @@
 "use client";
 import classNames from "classnames";
 import styles from "./label.module.scss";
-export interface LabelProps {
+export type LabelProps = {
   children: Readonly<React.ReactNode>;
   level: "primary" | "secondary" | "";
-  size: "small" | "smallx" | "medium" | "large" | "xL" | "xxL" | "xxxL";
-}
+  size: "small" | "xL" | "smallx";
+};
 
-export default function ({ children, level, size }: LabelProps) {
+export default function Label({ children, level, size }: LabelProps) {
   return (
     <div className={`${styles.label}`}>
       <p
@@ -16,10 +16,7 @@ export default function ({ children, level, size }: LabelProps) {
           [`${styles.label}_level--secondary`]: level === "secondary",
           [`${styles.label}_size--small`]: size === "small",
           [`${styles.label}_size--smallx`]: size === "smallx",
-          [`${styles.label}_size--medium`]: size === "medium",
-          [`${styles.label}_size--large`]: size === "large",
           [`${styles.label}_size--xL`]: size === "xL",
-          [`${styles.label}_size--xxxL`]: size === "xxxL",
         })}
       >
         {children}

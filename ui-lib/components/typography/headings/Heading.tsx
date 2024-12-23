@@ -3,14 +3,14 @@ import classnames from "classnames";
 import styles from "./Heading.module.scss";
 
 type HeadingLevel = "page" | "content";
-type HeadingVariant = "h1" | "h2" | "h3";
-export interface HeadingProps {
+type HeadingVariant = "h1";
+export type HeadingProps = {
   title: string;
   level: HeadingLevel;
   variant: HeadingVariant;
-}
+};
 
-export default function ({
+export default function Heading({
   title,
   level = "page",
   variant = "h1",

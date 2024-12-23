@@ -16,6 +16,11 @@
     $colors-violet-primary,
     $colors-orange-primary
   );
+  &_header {
+    gap: $spaces-m $spaces-xs;
+    display: flex;
+    flex-direction: inherit;
+  }
   &_default {
     background-color: $colors-white;
   }

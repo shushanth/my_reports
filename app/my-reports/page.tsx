@@ -1,5 +1,6 @@
 import * as Ui from "../../ui-lib/components";
 import DashboardOverview from "./dashboard-overview/DashboardOverview";
+import LinksOverview from "./links-overview/LinksOverview";
 import styles from "./myreports.module.scss";
 
 export default function Reports() {
@@ -21,6 +22,7 @@ export default function Reports() {
 
       <div className="hz-line"></div>
       <DashboardOverview />
+      <LinksOverview />
     </div>
   );
 }

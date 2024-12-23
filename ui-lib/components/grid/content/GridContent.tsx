@@ -10,11 +10,20 @@ export type GridContentProps = {
   data: ContentData[];
 };
 
-export const GridContent = ({
+export default function GridContent({
   type = "default",
   data = [],
-}: GridContentProps) => {
+}: GridContentProps) {
   const rowData = data.map((rData) => Object.values(rData));
+  const rowContent = (data: unknown[]) => {
+    return data.map((item: any, rIndex) => {
+      return (
+        <div key={rIndex} className={`${styles.grid_content}_row_${type}_item`}>
+          {item}
+        </div>
+      );
+    });
+  };
   return (
     <div
       className={classNames({
@@ -33,20 +42,11 @@ export const GridContent = ({
                   [`${styles.grid_content}_row_default`]: type === "default",
                 })}
               >
-                {rData.map((item: any, rIndex) => {
-                  return (
-                    <div
-                      key={rIndex}
-                      className={`${styles.grid_content}_row_${type}_item`}
-                    >
-                      {item}
-                    </div>
-                  );
-                })}
+                {rowContent(rData)}
               </div>
             );
           })
         : null}
     </div>
   );
-};
+}

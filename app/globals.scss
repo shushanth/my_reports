@@ -38,9 +38,8 @@ a {
 
 .app_layout {
   display: flex;
-  height: 100vh;
   gap: $spaces-xxl;
-  margin: $spaces-s $spaces-xl $spaces-s 0;
+  margin: $spaces-s $spaces-xl $spaces-xxl 0;
 }
 
 .hz-line {

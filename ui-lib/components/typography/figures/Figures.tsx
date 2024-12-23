@@ -20,13 +20,17 @@ enum EntityEnum {
 
 type FigurePrefix = "dollar";
 
-export type FigureProps = {
+export type FiguresProps = {
   value: number;
   formatter?: boolean;
   prefix?: FigurePrefix;
 };
 
-export default function ({ value, formatter = true, prefix }: FigureProps) {
+export default function Figures({
+  value,
+  formatter = true,
+  prefix,
+}: FiguresProps) {
   const figureRoundVal = (): string => {
     if (!formatter) {
       return `${value.toLocaleString()}`;

@@ -9,11 +9,13 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@reduxjs/toolkit": "^2.5.0",
+    "echarts": "^5.5.1",
+    "echarts-for-react": "^3.0.2",
     "next": "15.1.2",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "echarts": "^5.5.1",
-    "echarts-for-react": "^3.0.2"
+    "react-redux": "^9.2.0"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",

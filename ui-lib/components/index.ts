@@ -7,9 +7,10 @@ import Button from "./buttons/Button";
 import DonutChart from "./charts/donut/DonutChart";
 import Grid from "./grid/Grid";
 import GridHeader from "./grid/header/GridHeader";
-import { GridContent } from "./grid/content/GridContent";
+import GridContent from "./grid/content/GridContent";
 import GridFooter from "./grid/footer/GridFooter";
 import Pagination from "./pagination/Pagination";
+import ButtonGroup from "./buttons/group/ButtonGroup";
 export {
   Heading,
   Label,
@@ -23,4 +24,5 @@ export {
   GridContent,
   GridFooter,
   Pagination,
+  ButtonGroup,
 };

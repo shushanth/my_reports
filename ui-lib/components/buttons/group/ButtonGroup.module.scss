@@ -1,0 +1,7 @@
+@import "../../../styles/partials/variables.scss";
+@import "../../../styles/partials/mixins.scss";
+
+.button_group {
+  @include flex-row();
+  margin: $spaces-m;
+}

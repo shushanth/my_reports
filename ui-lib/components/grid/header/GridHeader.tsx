@@ -4,7 +4,7 @@ export type GridHeader = {
   data: string[];
 };
 
-export default function ({ data }: GridHeader) {
+export default function GridHeader({ data }: GridHeader) {
   return (
     <div className={`${styles.grid_header}`}>
       {data.length
