@@ -1,0 +1,14 @@
+@import "../../../styles/partials/variables.scss";
+
+.nav_layout {
+  display: flex;
+  flex-direction: column;
+  padding: $spaces-xl;
+  width: 200px;
+  margin-top: $spaces-xl + $spaces-xs;
+  background: linear-gradient($colors-violet-primary, $colors-orange-primary);
+  position: relative;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  height: 800px;
+}

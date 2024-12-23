@@ -1,0 +1,16 @@
+@import "../../ui-lib/styles/partials/variables.scss";
+
+.navigation {
+  display: flex;
+  flex-direction: column;
+  &_item {
+    padding: $spaces-s $spaces-m;
+
+    a {
+      color: $colors-white;
+    }
+    &--active {
+      border-bottom: 1px solid $colors-white;
+    }
+  }
+}

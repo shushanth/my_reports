@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.scss";
+import Navigation from "./navigation/Navigation";
 
 export const metadata: Metadata = {
   title: "My Reports",
@@ -14,7 +15,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <div className="app_layout">
+          <Navigation />
+          {children}
+        </div>
+      </body>
     </html>
   );
 }

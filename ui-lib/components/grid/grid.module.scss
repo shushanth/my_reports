@@ -1,0 +1,9 @@
+@import "../../styles/partials/variables.scss";
+@import "../../styles/partials/mixins.scss";
+
+.grid {
+  @include flex-column();
+  margin: $spaces-m;
+  border: 1px solid $colors-violet-secondary;
+  border-radius: $spaces-m;
+}

@@ -1,0 +1,10 @@
+@import "../../../../ui-lib/styles/partials/variables.scss";
+
+.links {
+  &_header {
+    display: flex;
+    flex-direction: column;
+    &header {
+    }
+  }
+}

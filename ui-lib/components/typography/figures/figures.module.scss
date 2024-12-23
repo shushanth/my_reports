@@ -1,0 +1,12 @@
+@import "../../../styles/partials/variables";
+
+.figures {
+  display: flex;
+  flex-direction: column;
+  margin: $spaces-m;
+  &_value {
+    color: $colors-violet-secondary;
+    font-size: $font-size-xxxl;
+    font-weight: $font-weight-boldest;
+  }
+}

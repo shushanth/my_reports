@@ -1,0 +1,18 @@
+@import "../../../ui-lib/styles/partials/variables.scss";
+
+#media_links {
+  display: flex;
+  gap: $spaces-m;
+  margin: $spaces-l 0;
+}
+
+.dashboard_overview {
+  display: flex;
+  flex-direction: column;
+  &_media {
+    @extend #media_links;
+  }
+  &_links {
+    @extend #media_links;
+  }
+}

@@ -3,8 +3,8 @@ import classNames from "classnames";
 import styles from "./label.module.scss";
 export interface LabelProps {
   children: Readonly<React.ReactNode>;
-  level: "primary" | "secondary";
-  size: "small" | "medium" | "large" | "xL" | "xxL" | "xxxL";
+  level: "primary" | "secondary" | "";
+  size: "small" | "smallx" | "medium" | "large" | "xL" | "xxL" | "xxxL";
 }
 
 export default function ({ children, level, size }: LabelProps) {
@@ -15,6 +15,7 @@ export default function ({ children, level, size }: LabelProps) {
           [`${styles.label}_level--primary`]: level === "primary",
           [`${styles.label}_level--secondary`]: level === "secondary",
           [`${styles.label}_size--small`]: size === "small",
+          [`${styles.label}_size--smallx`]: size === "smallx",
           [`${styles.label}_size--medium`]: size === "medium",
           [`${styles.label}_size--large`]: size === "large",
           [`${styles.label}_size--xL`]: size === "xL",
