@@ -11,4 +11,8 @@
   border-top-right-radius: 50px;
   border-bottom-right-radius: 50px;
   height: 800px;
+
+  @media (min-width: $mobileS) and (max-width: $laptop) {
+    display: none;
+  }
 }

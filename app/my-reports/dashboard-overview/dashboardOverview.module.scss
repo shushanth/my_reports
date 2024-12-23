@@ -17,3 +17,20 @@
     @extend #media_links;
   }
 }
+
+@media (max-width: $tablet) {
+  .dashboard_overview_media {
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: $mobileS) and (max-width: $tablet) {
+  .dashboard_overview {
+    margin: 0 $spaces-m;
+  }
+  .dashboard_overview_media,
+  .dashboard_overview_links {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+}

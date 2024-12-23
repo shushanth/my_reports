@@ -29,3 +29,9 @@
     }
   }
 }
+
+@media (min-width: $mobileS) and (max-width: $tablet) {
+  .label_size--xL {
+    font-size: $font-size-s;
+  }
+}

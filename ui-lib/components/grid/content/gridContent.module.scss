@@ -40,3 +40,14 @@
     }
   }
 }
+
+@media (min-width: $mobileS) and (max-width: $tablet) {
+  .grid_content {
+    font-size: $font-size-s;
+    overflow-x: auto;
+    width: 100%;
+    &_row {
+      width: 100vw;
+    }
+  }
+}

@@ -12,7 +12,7 @@ export default function MediaContent({ mediaContent, type }: ContentProps) {
       <div className={`${styles.media_content}content`}>
         <Ui.Figures value={mediaContent} prefix={type} />
       </div>
-      <div className={`${styles.media_content}action`}>
+      <div className={`${styles.media_content}_action`}>
         <Ui.Button shape="rounded" size="small" level="secondary">
           View Links
         </Ui.Button>

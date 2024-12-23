@@ -11,6 +11,7 @@ $font-size-l: 26px;
 $font-size-xl: 30px;
 $font-size-xxl: 50px;
 $font-size-xxxl: 75px;
+$font-size-mobile: 8px;
 
 $font-weight-bold: 500;
 $font-weight-bolder: 600;
@@ -37,3 +38,15 @@ $spaces-l: 16px;
 $spaces-xl: 20px;
 $spaces-xxl: 24px;
 $spaces-xxxl: 28px;
+
+/*
+    devices
+*/
+
+$mobileS: 320px;
+$mobileM: 375px;
+$mobileL: 425px;
+$tablet: 768px;
+$laptop: 1024px;
+$laptopL: 1440px;
+$desktop: 2560px;

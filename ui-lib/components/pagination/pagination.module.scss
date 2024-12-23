@@ -50,3 +50,17 @@
     }
   }
 }
+
+@media (min-width: $mobileS) and (max-width: $tablet) {
+  .pagination {
+    &_next {
+      @include flex-row;
+      align-items: flex-end;
+      justify-content: flex-end;
+      flex: 1;
+    }
+    &_page_btn {
+      display: none;
+    }
+  }
+}

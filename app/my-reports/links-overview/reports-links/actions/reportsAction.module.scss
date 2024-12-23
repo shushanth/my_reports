@@ -14,3 +14,10 @@
     margin-right: $spaces-xl;
   }
 }
+
+@media (min-width: $mobileS) and (max-width: $tablet) {
+  .report_action_action {
+    flex-direction: column;
+    justify-content: center;
+  }
+}

@@ -30,3 +30,16 @@
     background-color: $colors-white-smoke;
   }
 }
+
+@media (min-width: $mobileS) and (max-width: $tablet) {
+  .card {
+    flex: 0;
+    width: 450px;
+
+    &_content {
+      max-height: 150px;
+      height: 150px;
+      overflow-y: scroll;
+    }
+  }
+}

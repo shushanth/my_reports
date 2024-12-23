@@ -5,3 +5,8 @@
   @include flex-row();
   margin: $spaces-m;
 }
+@media (min-width: $mobileS) and (max-width: $tablet) {
+  .button_group {
+    flex-direction: column;
+  }
+}

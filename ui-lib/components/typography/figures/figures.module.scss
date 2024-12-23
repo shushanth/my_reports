@@ -10,3 +10,9 @@
     font-weight: $font-weight-boldest;
   }
 }
+
+@media (min-width: $mobileS) and (max-width: $tablet) {
+  .figures_value {
+    font-size: $font-size-xxl;
+  }
+}
