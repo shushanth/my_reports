@@ -4,10 +4,26 @@ A detailed report of content removal activities, including infringements, media 
 
 ## Project setup
 
-First, run the development server:
+```
+npm install
+```
+
+### Local and dev server
 
 ```bash
 npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+```
+
+### Build and minifies for production
+
+```bash
+npm run build
 # or
 yarn dev
 # or
