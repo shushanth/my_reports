@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HeaderDateInfo renders component page unchanged 1`] = `
+<div>
+  <div
+    class="headers_date"
+  >
+    <div
+      class="headers_date_headers"
+    >
+      <div
+        class="heading"
+      >
+        <h1
+          class="heading-level-page--h1"
+        >
+          My Reports
+        </h1>
+      </div>
+      <div
+        class="label"
+      >
+        <p
+          class="label_level--primary label_size--small"
+        >
+          A detailed report of content removal activities, including infringements, media removals, and insights into impacted value and top offenders.
+        </p>
+      </div>
+    </div>
+    <div
+      class="headers_date_date"
+    >
+      October 2024
+    </div>
+  </div>
+</div>
+`;

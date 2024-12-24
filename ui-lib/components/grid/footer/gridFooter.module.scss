@@ -1,0 +1,11 @@
+@import "../../../styles/partials/variables.scss";
+@import "../../../styles/partials/mixins.scss";
+
+.grid_footer {
+  @include flex-row();
+  background: linear-gradient($colors-violet-primary, $colors-orange-primary);
+  padding: $spaces-xs;
+  border-top: 1px solid;
+  border-bottom-left-radius: $spaces-m;
+  border-bottom-right-radius: $spaces-m;
+}

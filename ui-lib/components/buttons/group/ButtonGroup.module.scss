@@ -1,0 +1,12 @@
+@import "../../../styles/partials/variables.scss";
+@import "../../../styles/partials/mixins.scss";
+
+.button_group {
+  @include flex-row();
+  margin: $spaces-m;
+}
+@media (min-width: $mobileS) and (max-width: $tablet) {
+  .button_group {
+    flex-direction: column;
+  }
+}

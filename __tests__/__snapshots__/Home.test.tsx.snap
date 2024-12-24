@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home renders component unchanged 1`] = `
+<div>
+  <div
+    data-testid="home_page--component"
+  >
+    Home
+    <div
+      class="button button_primary button_medium button--straight"
+    >
+      <button
+        class=""
+      >
+        My Reports
+      </button>
+    </div>
+  </div>
+</div>
+`;

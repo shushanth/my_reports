@@ -1,0 +1,36 @@
+@import "@/ui-lib/styles/partials/variables.scss";
+
+.headers_date {
+  display: flex;
+  margin-top: $spaces-xxxl;
+  margin-bottom: $spaces-l;
+
+  &_headers {
+    flex: 1;
+  }
+  &_date {
+    flex: 1;
+    align-self: end;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    margin: 0 $spaces-m;
+  }
+}
+
+@media (min-width: $mobileS) and (max-width: $tablet) {
+  .headers_date {
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 0 $spaces-m;
+    width: 100vw;
+  }
+  .headers_date_date {
+    align-self: flex-start;
+    align-self: flex-start;
+    flex: 1;
+    margin-top: $spaces-m;
+    margin-left: 0;
+    margin-bottom: $spaces-m;
+  }
+}

@@ -1,0 +1,53 @@
+@import "../../../styles/partials/variables.scss";
+@import "../../../styles/partials/mixins.scss";
+
+#content_item {
+  padding: $spaces-s $spaces-m;
+  font-size: $font-size-xs;
+  flex: 1;
+  &:last-child {
+    flex: none;
+  }
+}
+
+.grid_content {
+  @include flex-column();
+  &_default--layout {
+    min-height: 430px;
+  }
+  &_row {
+    @include flex-row();
+    border-bottom: 1px solid $colors-violet-secondary;
+    color: $colors-violet-secondary;
+    &_primary {
+      &_item {
+        @extend #content_item;
+        font-weight: $font-weight-boldest;
+      }
+    }
+
+    &_default {
+      &_item {
+        padding: $spaces-m;
+        @extend #content_item;
+        font-weight: $font-weight-bold;
+        cursor: pointer;
+      }
+      &:hover {
+        background-color: $colors-white-smoke;
+        opacity: 0.8;
+      }
+    }
+  }
+}
+
+@media (min-width: $mobileS) and (max-width: $tablet) {
+  .grid_content {
+    font-size: $font-size-s;
+    overflow-x: auto;
+    width: 100%;
+    &_row {
+      width: 100vw;
+    }
+  }
+}

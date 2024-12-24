@@ -1,0 +1,36 @@
+@import "@/ui-lib/styles/partials/variables.scss";
+
+#dot {
+  width: $spaces-s;
+  height: $spaces-s;
+  border-radius: 50%;
+  margin: 0 $spaces-s;
+  display: inline-block;
+}
+.removed_content {
+  display: flex;
+  margin-left: $spaces-m;
+  &_info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+
+    &--details {
+      display: flex;
+      flex-direction: column;
+      gap: $spaces-xs;
+
+      &_dot-primary {
+        @extend #dot;
+        color: $colors-orange-primary;
+        background-color: $colors-orange-primary;
+      }
+      &_dot-secondary {
+        @extend #dot;
+        color: $colors-violet-primary;
+        background-color: $colors-violet-primary;
+      }
+    }
+  }
+}

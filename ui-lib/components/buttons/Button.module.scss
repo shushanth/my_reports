@@ -1,0 +1,46 @@
+@import "../../styles/partials/variables.scss";
+@import "../../styles/partials/mixins.scss";
+
+.button {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid;
+  &_primary {
+    color: $colors-violet-secondary;
+    background-color: $colors-white;
+  }
+
+  &_secondary {
+    color: $colors-violet-secondary;
+  }
+
+  &_small {
+    font-size: $font-size-xs;
+    font-weight: $font-weight-bold;
+    padding: $spaces-xs $spaces-m;
+  }
+  &_medium {
+    font-size: $font-size-xs;
+    font-weight: $font-weight-bolder;
+    padding: $spaces-s $spaces-m;
+  }
+
+  &--rounded {
+    border-radius: $spaces-xxl;
+  }
+
+  &--straight {
+    border-radius: $spaces-xs;
+  }
+
+  &--light {
+    font-weight: $font-weight-bold;
+  }
+  &--bold {
+    font-weight: $font-weight-boldest;
+  }
+
+  .disabled {
+    @include element-disabled();
+  }
+}

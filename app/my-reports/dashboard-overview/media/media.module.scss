@@ -1,0 +1,29 @@
+@import "@/ui-lib/styles/partials/variables.scss";
+
+.media {
+  &_header {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &_content {
+    display: flex;
+    flex-direction: column;
+    margin-left: $spaces-xxl;
+
+    &_action {
+      display: flex;
+      justify-content: flex-end;
+      margin: 0 $spaces-xs $spaces-m 0;
+    }
+  }
+}
+
+@media (min-width: $mobileS) and (max-width: $tablet) {
+  .media_content {
+    margin: 0;
+  }
+  .media_content_action {
+    justify-content: flex-start;
+  }
+}

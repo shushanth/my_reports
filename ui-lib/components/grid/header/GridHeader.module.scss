@@ -1,0 +1,16 @@
+@import "../../../styles//partials/mixins.scss";
+@import "../../../styles//partials/variables.scss";
+
+.grid_header {
+  @include flex-row();
+  color: $colors-violet-secondary;
+  padding: $spaces-m;
+  border-bottom: 1px solid;
+  &_item {
+    flex: 1;
+    text-transform: uppercase;
+    &:last-child {
+      flex: none;
+    }
+  }
+}

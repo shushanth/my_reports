@@ -1,0 +1,45 @@
+@import "../../styles/partials/variables.scss";
+@import "../../styles/partials/mixins.scss";
+
+.card {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+
+  padding: $spaces-xs $spaces-s;
+  border-radius: $spaces-s;
+  background-clip: padding-box;
+  position: relative;
+  border: $spaces-xs solid transparent;
+  @include border-gradient(
+    $spaces-xs,
+    $colors-violet-primary,
+    $colors-orange-primary
+  );
+  &_header {
+    gap: $spaces-m $spaces-xs;
+    display: flex;
+    flex-direction: inherit;
+    padding: 0 $spaces-m;
+  }
+
+  &_default {
+    background-color: $colors-white;
+  }
+  &_primary {
+    background-color: $colors-white-smoke;
+  }
+}
+
+@media (min-width: $mobileS) and (max-width: $tablet) {
+  .card {
+    flex: 0;
+    width: 450px;
+
+    &_content {
+      max-height: 150px;
+      height: 150px;
+      overflow-y: scroll;
+    }
+  }
+}

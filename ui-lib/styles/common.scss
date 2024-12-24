@@ -1,0 +1,20 @@
+@import "../styles/partials/mixins.scss";
+
+@font-face {
+  font-family: "font-family-poppins";
+  src: url("../../public/fonts/Poppins/Poppins-Regular.ttf");
+}
+
+button {
+  background: inherit;
+  color: inherit;
+  border: none;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
+
+a {
+  list-style: none;
+  text-decoration: none;
+}

@@ -1,0 +1,37 @@
+@import "../../../styles/partials/variables";
+
+.label {
+  display: flex;
+  flex-direction: column;
+  &_level {
+    &--primary {
+      color: $colors-gray--light;
+    }
+
+    &--secondary {
+      color: $colors-violet-secondary;
+    }
+  }
+  &_size {
+    &--small {
+      font-size: $font-size-xs;
+      font-weight: $font-weight-bold;
+    }
+
+    &--smallx {
+      font-size: $font-size-sx;
+      font-weight: $font-weight-bold;
+    }
+
+    &--xL {
+      font-size: $font-size-xl;
+      font-weight: $font-weight-bolder;
+    }
+  }
+}
+
+@media (min-width: $mobileS) and (max-width: $tablet) {
+  .label_size--xL {
+    font-size: $font-size-s;
+  }
+}

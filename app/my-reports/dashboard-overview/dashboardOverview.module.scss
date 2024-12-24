@@ -1,0 +1,36 @@
+@import "@/ui-lib/styles/partials/variables.scss";
+
+#media_links {
+  display: flex;
+  gap: $spaces-m;
+  margin: $spaces-l 0;
+}
+
+.dashboard_overview {
+  display: flex;
+  flex-direction: column;
+  margin-top: $spaces-xxxl;
+  &_media {
+    @extend #media_links;
+  }
+  &_links {
+    @extend #media_links;
+  }
+}
+
+@media (max-width: $tablet) {
+  .dashboard_overview_media {
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: $mobileS) and (max-width: $tablet) {
+  .dashboard_overview {
+    margin: 0 $spaces-m;
+  }
+  .dashboard_overview_media,
+  .dashboard_overview_links {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+}

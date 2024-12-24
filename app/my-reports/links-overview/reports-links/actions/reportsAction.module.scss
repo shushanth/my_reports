@@ -1,0 +1,23 @@
+@import "../../../../../ui-lib/styles/partials/variables.scss";
+@import "../../../../../ui-lib/styles/partials/mixins.scss";
+
+.report_action {
+  @include flex-row;
+
+  &_filters {
+    flex: 1;
+  }
+  &_action {
+    @include flex-row();
+    align-items: center;
+    gap: $spaces-xl;
+    margin-right: $spaces-xl;
+  }
+}
+
+@media (min-width: $mobileS) and (max-width: $tablet) {
+  .report_action_action {
+    flex-direction: column;
+    justify-content: center;
+  }
+}

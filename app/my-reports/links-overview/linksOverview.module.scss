@@ -1,0 +1,7 @@
+@import "../../../ui-lib/styles/partials/variables.scss";
+@import "../../../ui-lib/styles/partials/mixins.scss";
+
+.links_overview {
+  @include flex-column();
+  margin: $spaces-m 0;
+}

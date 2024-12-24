@@ -1,0 +1,66 @@
+@import "../../styles/partials/variables.scss";
+@import "../../styles/partials/mixins.scss";
+
+#count_btn_active {
+  border-radius: $spaces-xs;
+  background-color: $colors-white;
+}
+
+.pagination {
+  @include flex-row();
+  padding: $spaces-m;
+  align-items: center;
+  width: 100%;
+  &_prev {
+    flex: none;
+    cursor: pointer;
+    &_disabled {
+      @include element-disabled();
+    }
+  }
+  &_page_btn {
+    flex: 1;
+    @include flex-row();
+    align-self: center;
+    justify-content: center;
+    gap: $spaces-m;
+    &_count {
+      cursor: pointer;
+      width: $spaces-xxxl;
+      height: $spaces-xxxl;
+      align-items: center;
+      font-size: $spaces-m;
+      justify-content: center;
+      color: $colors-violet-secondary;
+      font-weight: $font-weight-bolder;
+      @include flex-column();
+      &:hover {
+        @extend #count_btn_active;
+      }
+      &--active {
+        @extend #count_btn_active;
+      }
+    }
+  }
+  &_next {
+    flex: none;
+    cursor: pointer;
+    &_disabled {
+      @include element-disabled();
+    }
+  }
+}
+
+@media (min-width: $mobileS) and (max-width: $tablet) {
+  .pagination {
+    &_next {
+      @include flex-row;
+      align-items: flex-end;
+      justify-content: flex-end;
+      flex: 1;
+    }
+    &_page_btn {
+      display: none;
+    }
+  }
+}

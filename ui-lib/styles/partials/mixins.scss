@@ -1,0 +1,40 @@
+@import "../partials/variables.scss";
+
+@mixin flex-row() {
+  display: flex;
+}
+@mixin flex-column() {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin linear-gradient($colors...) {
+  background: linear-gradient($colors);
+}
+@mixin text-gradient($colors...) {
+  @include linear-gradient($colors);
+  background-clip: text;
+  color: transparent;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+}
+
+@mixin border-gradient($borderSize: 5px, $colors...) {
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: -$borderSize;
+    border-radius: inherit;
+    z-index: -1;
+    @include linear-gradient($colors);
+  }
+}
+
+@mixin element-disabled {
+  pointer-events: none;
+  opacity: 0.5;
+}
