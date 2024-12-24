@@ -1,5 +1,5 @@
 import styles from "./headersDateInfo.module.scss";
-import * as Ui from "../../../ui-lib/components";
+import * as Ui from "@/ui-lib/components";
 
 export default function HeaderDateInfo() {
   return (

@@ -1,10 +1,9 @@
-import * as Ui from "../../../ui-lib/components";
+import * as Ui from "@/ui-lib/components";
+import { Reports, getReportsApi } from "@/mock_server/reportsApi";
 import styles from "./dashboardOverview.module.scss";
-
 import MediaContent from "./media/MediaContent";
 import MediaHeader from "./media/MediaHeader";
 import LinksHeader from "./links/LinksHeader";
-import { Reports, getReportsApi } from "../../../mock_server/reportsApi";
 import RemovedContent from "./links/removed-content/RemovedContent";
 import InfringersContent from "./links/infringers-content/InfringersContent";
 
@@ -16,7 +15,10 @@ export default async function DashboardOverview() {
     chart: { totalRemoval, manuallySubmitted },
   } = reportsResponse;
   return (
-    <div className={`${styles.dashboard_overview}`}>
+    <div
+      data-testid="dashboardOverview_page--component"
+      className={`${styles.dashboard_overview}`}
+    >
       <div className={`${styles.dashboard_overview}_media`}>
         <Ui.Card
           type="primary"

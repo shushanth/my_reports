@@ -1,4 +1,4 @@
-import * as Ui from "../../../../../ui-lib/components";
+import * as Ui from "@/ui-lib/components";
 import styles from "./removedContent.module.scss";
 
 export type RemovedContentProps = {

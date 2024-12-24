@@ -1,4 +1,4 @@
-import * as Ui from "../../../../ui-lib/components";
+import * as Ui from "@/ui-lib/components";
 import styles from "./media.module.scss";
 type HeaderProps = {
   title: string;

@@ -1,11 +1,11 @@
 "use client";
 import { redirect } from "next/navigation";
-import * as Ui from "../ui-lib/components";
+import * as Ui from "@/ui-lib/components";
 
-export default function () {
+export default function Home() {
   const toReports = () => redirect("my-reports");
   return (
-    <div>
+    <div data-testid="home_page--component">
       Home
       <Ui.Button
         level="primary"

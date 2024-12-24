@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import * as Ui from "../../ui-lib/components";
+import * as Ui from "@/ui-lib/components";
 import styles from "./navigation.module.scss";
 import { usePathname } from "next/navigation";
 

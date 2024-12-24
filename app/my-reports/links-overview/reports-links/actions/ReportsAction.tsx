@@ -1,4 +1,4 @@
-import * as Ui from "../../../../../ui-lib/components";
+import * as Ui from "@/ui-lib/components";
 import styles from "./reportsAction.module.scss";
 
 export default function ReportsAction() {

@@ -1,16 +1,17 @@
 "use client";
 import React from "react";
-import { useAppSelector, useAppStore } from "../../../../store-lib/hooks";
-import * as Ui from "../../../../ui-lib/components";
+import { useAppSelector, useAppStore } from "@/store-lib/hooks";
+import * as Ui from "@/ui-lib/components";
 import {
   initReports,
   paginateLinks,
   pageNumberUpdate,
-} from "../../../../store-lib/features/reports-links/reportsLinksSlice";
-import { totalLinksPagesCount } from "../../../../store-lib/features/reports-links/reportsLinksSelector";
+} from "@/store-lib/features/reports-links/reportsLinksSlice";
+import { totalLinksPagesCount } from "@/store-lib/features/reports-links/reportsLinksSelector";
 import { useSelector } from "react-redux";
-import { RootState } from "../../../../store-lib/store";
+import { RootState } from "@/store-lib/store";
 import ReportsAction from "./actions/ReportsAction";
+
 export type ReportsData = {
   domain: string;
   url: string;
@@ -34,18 +35,24 @@ export default function ReportsLinks({ reports }: ReportsLinks) {
   );
   const { totalPageNumbers, currentPageLinks } =
     useSelector(totalLinksPagesCount);
-  const onNextClick = () => {
+  const onNextClick = React.useCallback(() => {
     store.dispatch(paginateLinks("increment"));
-  };
-  const onPrevClick = () => {
+  }, [store]);
+  const onPrevClick = React.useCallback(() => {
     store.dispatch(paginateLinks("decrement"));
-  };
-  const onCountClick = (count: number) => {
-    store.dispatch(pageNumberUpdate(count));
-  };
+  }, [store]);
+  const onCountClick = React.useCallback(
+    (count: number) => {
+      store.dispatch(pageNumberUpdate(count));
+    },
+    [store]
+  );
   const getHeaderData = () => ["domain", "url", "sourceType", "Date"];
   return (
-    <Ui.Card headerContent={<ReportsAction />}>
+    <Ui.Card
+      data-testid="reportsLinks_page--component"
+      headerContent={<ReportsAction />}
+    >
       <Ui.Grid>
         <>
           <Ui.GridHeader data={getHeaderData()} />

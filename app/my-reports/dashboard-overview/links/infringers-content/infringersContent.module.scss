@@ -1,5 +1,5 @@
-@import "../../../../../ui-lib/styles/partials/variables.scss";
-@import "../../../../../ui-lib/styles/partials/mixins.scss";
+@import "@/ui-lib/styles/partials/variables.scss";
+@import "@/ui-lib/styles/partials/mixins.scss";
 
 .infringers_content {
   @include flex-column();
